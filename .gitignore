@@ -1,0 +1,17 @@
+node_modules/
+dist/
+coverage/
+.env
+.env.local
+*.log
+certs/*
+!certs/.gitkeep
+!certs/.gitignore
+*.p12
+*.pfx
+*.cer
+*.key
+*.pem
+!templates/**/*.png
+.DS_Store
+tmp-*.json

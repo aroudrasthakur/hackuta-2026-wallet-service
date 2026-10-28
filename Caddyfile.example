@@ -1,0 +1,6 @@
+# Copy to /etc/caddy/Caddyfile (or Caddy's config path) and replace the hostname.
+# Caddy obtains a public certificate automatically.
+
+wallet.example.com {
+	reverse_proxy 127.0.0.1:3000
+}

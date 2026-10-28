@@ -1,0 +1,92 @@
+{
+  "formatVersion": 1,
+  "passTypeIdentifier": "pass.com.hackuta.placeholder",
+  "teamIdentifier": "XXXXXXXXXX",
+  "serialNumber": "placeholder",
+  "organizationName": "HackUTA",
+  "description": "HackUTA 2026 Check-in Pass",
+  "logoText": "HackUTA",
+  "sharingProhibited": true,
+  "groupingIdentifier": "hackuta-2026-checkin",
+  "backgroundColor": "rgb(16, 47, 70)",
+  "foregroundColor": "rgb(246, 237, 223)",
+  "labelColor": "rgb(201, 162, 39)",
+  "locations": [
+    {
+      "latitude": 32.7299,
+      "longitude": -97.1161,
+      "relevantText": "Welcome to HackUTA! Show this pass at the check-in desk to pick up your badge."
+    }
+  ],
+  "semantics": {
+    "eventName": "HackUTA 2026",
+    "eventType": "PKEventTypeConference",
+    "venueName": "The University of Texas at Arlington",
+    "venueLocation": {
+      "latitude": 32.7299,
+      "longitude": -97.1161
+    }
+  },
+  "eventTicket": {
+    "headerFields": [
+      {
+        "key": "pass_stage",
+        "label": "STAGE",
+        "value": "CHECK-IN"
+      }
+    ],
+    "primaryFields": [
+      {
+        "key": "event_name",
+        "label": "EVENT",
+        "value": "HackUTA 2026"
+      }
+    ],
+    "secondaryFields": [
+      {
+        "key": "participant_name",
+        "label": "PARTICIPANT",
+        "value": "Participant"
+      },
+      {
+        "key": "pass_status",
+        "label": "STATUS",
+        "value": "Pre-Check-In Only"
+      }
+    ],
+    "auxiliaryFields": [
+      {
+        "key": "event_dates",
+        "label": "DATES",
+        "value": "Nov 14–15, 2026"
+      },
+      {
+        "key": "event_location",
+        "label": "LOCATION",
+        "value": "The University of Texas at Arlington"
+      }
+    ],
+    "backFields": [
+      {
+        "key": "instructions",
+        "label": "Check-in Instructions",
+        "value": "Present this QR code to a volunteer at the HackUTA check-in desk to pick up your physical badge. Once your badge is assigned, this registration QR code is permanently retired and your physical badge becomes your event pass for meals, points, and the shop."
+      },
+      {
+        "key": "event_location_back",
+        "label": "Venue",
+        "value": "The University of Texas at Arlington"
+      },
+      {
+        "key": "event_dates_back",
+        "label": "Event Dates",
+        "value": "Nov 14–15, 2026"
+      },
+      {
+        "key": "validity",
+        "label": "Validity",
+        "value": "This Wallet pass is only for first check-in. It is not valid after badge pickup."
+      }
+    ]
+  }
+}

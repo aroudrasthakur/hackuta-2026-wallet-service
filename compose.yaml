@@ -1,0 +1,28 @@
+# Hosting: see SETUP.md. Requires .env and PEM files in ./certs.
+services:
+  wallet:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    environment:
+      NODE_ENV: production
+      APPLE_CERT_PATH: /certs/signerCert.pem
+      APPLE_KEY_PATH: /certs/signerKey.pem
+      APPLE_WWDR_PATH: /certs/wwdr.pem
+    volumes:
+      - ./certs:/certs:ro
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "node",
+          "-e",
+          "fetch('http://127.0.0.1:3000/health').then((r)=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))",
+        ]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
